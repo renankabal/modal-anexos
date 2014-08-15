@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INDEX</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			$("#btn-show-modal").click(function(e){
+				e.preventDefault();
+
+				$("#dialog-example").modal('show');
+			});	
+		});
+	</script>
+</head>
+<body>
+<!-- BOTÃO QUE CHAMA A MODAL -->
+<p><a href="#myModal" id="btn-show-modal" role="button" class="btn btn-primary" data-toggle="modal">Visualizar anexos</a></p>
+
+<!-- MODAL A SER CHAMADA -->
+<div id="myModal" class="modal hide fade" id="dialog-example" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-header">
+		<h4>Anexos do processo</h4>
+	</div>	
+
+	<div class="modal-body">
+		<p>Eu sou Uma modalZinha</p>
+	</div>
+
+	<div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>	
+	</div>
+</div>
+
+</body>
+</html>
